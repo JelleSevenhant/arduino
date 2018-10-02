@@ -28,18 +28,11 @@ pinMode(rood3,OUTPUT);
 pinMode(drukknop,INPUT);
 }
 void loop(){ 
-
-
-
   while(au == 1){
 digitalWrite(groen1,HIGH);
 digitalWrite(groen2,HIGH);
 digitalWrite(groen3,HIGH);
 
-  if(digitalRead(drukknop)){
-    delay(300);
-    au=0;
-  }
 delay(3000);
 
 digitalWrite(groen1,LOW);
@@ -50,10 +43,6 @@ digitalWrite(oranje1,HIGH);
 digitalWrite(oranje2,HIGH);
 digitalWrite(oranje3,HIGH);
   
-  if(digitalRead(drukknop)){
-    delay(300);
-    au=0;
-  }
 delay(500);
 
 digitalWrite(oranje1,LOW);
@@ -64,10 +53,6 @@ digitalWrite(rood1,HIGH);
 digitalWrite(rood2,HIGH);
 digitalWrite(rood3,HIGH);
 
-  if(digitalRead(drukknop)){
-    delay(300);
-    au=0;
-  }
 delay(3000);
  
 digitalWrite(rood1,LOW);
